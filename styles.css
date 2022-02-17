@@ -262,3 +262,10 @@ Menu
     height: 150px;
   }
 }
+#search{
+  padding-left:5px;
+  font-size: 15px;
+  border: 1px solid #C59D5FFF;
+  border-radius: 10px;
+  color: #C59D5FFF;
+}
