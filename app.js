@@ -68,8 +68,12 @@ let id;
 function refresh(){
   if (id !== undefined){
     clearTimeout(id);
+    document.getElementById("button").classList.add("none");
+    document.getElementById("spinner").classList.remove("none");
   }
     id = setTimeout(()=>{
       displayMenuItems(searchedMenu);
+      document.getElementById("button").classList.remove("none");
+      document.getElementById("spinner").classList.add("none");
     },1000)
 }
