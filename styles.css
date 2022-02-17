@@ -280,9 +280,9 @@ Menu
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  transition: all 0.5s;
 
 }
+
 #button, #input {
   appearance: none;
   background: transparent;
@@ -290,11 +290,12 @@ Menu
   color: inherit;
   font: inherit;
   outline: 0;
+  padding: 2px;
 }
 
 #spinner {
   animation: spinner 1s infinite linear;
-  padding: 5px;
+  padding: 2px;
 }
 .none {
   display: none
