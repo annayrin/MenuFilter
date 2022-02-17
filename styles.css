@@ -294,15 +294,10 @@ Menu
 
 #spinner {
   animation: spinner 1s infinite linear;
-
-  padding: 0 0.25em;
+  padding: 5px;
 }
 .none {
   display: none
-}
-
-.block {
-  display: block
 }
 
 @-webkit-keyframes spinner {
