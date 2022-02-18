@@ -5,9 +5,11 @@ const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 const buttons = document.querySelectorAll(".filter-btn")
 // display all items when page loads
+
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
   displayMenuButtons();
+
 });
 
 
@@ -34,6 +36,7 @@ function displayMenuItems(menuItems) {
   // console.log(displayMenu);
 
   sectionCenter.innerHTML = displayMenu;
+
 }
 
 function displayMenuButtons() {
@@ -57,8 +60,8 @@ let searchedMenu;
 let search = document.getElementById("search");
 
   search.addEventListener("keyup", (e) => {
-    searchtext = e.target.value;
-    searchedMenu = menu.filter(item => item.desc.indexOf(searchtext) !== -1);
+    searchtext = e.target.value.toUpperCase();
+    searchedMenu = menu.filter(item => item.desc.toUpperCase().indexOf(searchtext) !== -1);
     refresh();
   })
 
@@ -77,3 +80,9 @@ function refresh(){
       document.getElementById("spinner").classList.add("none");
     },1000)
 }
+let photo;
+photo = document.querySelectorAll(".menu-item");
+console.log(photo);
+//     .forEach(item => item.addEventListener("click",()=>{
+//   console.log("anna");
+// }))

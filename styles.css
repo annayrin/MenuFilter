@@ -309,3 +309,8 @@ Menu
     transform: rotate(360deg);
   }
 }
+
+/* popup*/
+#popup{
+  z-index: 2;
+}
